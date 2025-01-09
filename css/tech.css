@@ -1,0 +1,49 @@
+
+/* Landing Page Sections */
+
+/* Tech Section */
+.garage {
+    padding: 15px;
+}
+
+blockquote {
+    position: relative;
+}
+
+.garage img {
+    max-height: 620px;
+    max-width: 100%;
+    border-radius: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+.garage footer {
+    padding-top: 12px;
+}
+
+/* Classic Style - Avatar Above Garage */
+.garage.classic img {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.garage.classic q {
+    display: block;
+}
+
+.garage.classic footer:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px;
+}
+
+/* Big Style */
+.garage.bigtest {
+    padding-top: 0;
+}
+
+.garage.bigtest q {
+    font-size: 22px;
+}

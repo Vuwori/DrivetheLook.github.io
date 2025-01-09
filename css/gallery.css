@@ -1,0 +1,155 @@
+
+/* Gallery Section */
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+#gallery img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#gallery [class*='col-'] {
+    padding: 0;
+}
+
+#gallery a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#gallery a:hover img {
+    opacity: 0.15;
+}
+
+#gallery a:before {
+    font-size: 2.3em;
+    height: 609px;
+    width: 69px;
+    border-radius: 99em;
+    content: "+";
+    text-align: center;
+    display: block;
+    position: absolute;
+    line-height: 72px;
+    margin: -35px 0 0 -35px;
+    opacity: 0;
+    top: 55%;
+    left: 50%;
+    transition: all 0.2s linear;
+}
+
+#gallery a:hover:before {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+}
+
+/* Gallery Image Styling */
+.gallery-img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Modal Styling */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8); /* Dark background */
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+/* Video*/
+#video-box {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Cars -*/
+#cars a {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#cars img {
+    display: inline-block;
+    padding: 15px 25px;
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+#cars .col-2-3 [class*='col-'] {
+    padding: 0;
+}
+
+/* Image Section */
+.col-3img {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Image Styling */
+.col-3img img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+}
+
+/* Clearfix */
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: "";
+}

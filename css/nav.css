@@ -1,0 +1,31 @@
+
+/* Responsive Navigation Trigger */
+#nav-trigger {
+    display: none;
+    text-align: right;
+}
+
+#nav-trigger span {
+    display: inline-block;
+    width: 40px;
+    height: 70px;
+    color: #121212;
+    cursor: pointer;
+    text-transform: capitalize;
+    font-size: 21px;
+    text-align: center;
+    border-radius: 6px 6px 0 0;
+    transition: all 0.25s ease-in-out;
+}
+
+#nav-trigger span:after {
+    font-family: "fontAwesome";
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+    content: "\f0c9";
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
