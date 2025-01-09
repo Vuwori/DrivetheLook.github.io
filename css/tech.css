@@ -1,6 +1,4 @@
-/* Landing Page Sections */
-
-/* General Garage Styles */
+/*tech*/
 .garage {
     padding: 15px;
 }
@@ -16,12 +14,6 @@
     padding-top: 12px;
 }
 
-/* Classic Style */
-.garage.classic img {
-    display: inline-block;
-    margin-bottom: 25px;
-}
-
 .garage.classic q {
     display: block;
 }
@@ -32,18 +24,4 @@
     width: 30px;
     height: 4px;
     margin: 10px auto 15px;
-}
-
-/* Big Style */
-.garage.bigtest {
-    padding-top: 0;
-}
-
-.garage.bigtest q {
-    font-size: 22px;
-}
-
-/* Blockquote Styles */
-blockquote {
-    position: relative;
 }

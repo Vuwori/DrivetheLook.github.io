@@ -1,0 +1,502 @@
+/* Gen */
+:root {
+    --main-font: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(29, 29, 29);
+    font-family: var(--main-font);
+    font-size: 16px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Reset Styles */
+body, 
+div, 
+dl, 
+dt, 
+dd, 
+ul, 
+ol, 
+li, 
+h1, h2, h3, h4, h5, h6, 
+pre, 
+form, 
+blockquote, 
+th, 
+td {
+    margin: 0; 
+    padding: 0; 
+}
+
+a {
+    text-decoration: none;
+    line-height: inherit;
+}
+
+p {
+    line-height: 39px;
+}
+
+/*Styles */
+form input, form textarea, form select {
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    line-height: 1.2;
+    outline: none;
+    margin: 5px 0;
+}
+
+form input:focus, form textarea:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+form input[type="submit"]:hover {
+    border-color: #e0e0e0;
+    color: #faccd3;
+}
+
+/* Rows and Columns */
+.row {
+    padding: 55px 0;
+    position: relative;
+    max-width: 1245px;
+    margin: 0 auto;
+}
+
+.no-padding-bottom .row {
+    padding-bottom: 0;
+}
+
+[class*='col-'] {
+    padding: 20px;
+    float: left;
+}
+
+.col-1 { width: 100%; }
+.col-2 { width: 50%; }
+.col-3 { width: 43.33%; }
+
+/* Header Styles */
+#header {
+    z-index: 9999;
+    width: 100%;
+    height: 71px !important;
+    overflow: visible;
+    position: absolute !important;
+    font-size: 13px;
+}
+
+#header .row { padding: 0; }
+#header ul { text-align: center; }
+#header aside { text-align: right; }
+#header li {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+}
+
+/* Logo Styles */
+#logo {
+    float: left;
+    line-height: 66px;
+    height: 31px;
+    margin-right: 15px;
+}
+
+#logo h1 { display: inline-block; }
+#logo img {
+    max-height: 60px;
+    margin-right: 5px;
+}
+
+/* Buttons */
+.button,
+input[type="submit"] {
+    font-size: 14px; 
+    font-weight: bold;
+    color: #ebebeb;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #d4d4d4;
+    display: inline-block;
+    transition: all 0.3s linear;
+    margin: 35px 0;
+    padding: 11px 16px;
+}
+
+.button:hover,
+input[type="submit"]:hover {
+    border-color: #e0e0e0;
+    color: #faccd3;
+}
+
+#banner .button {
+    font-size: 14px;
+    color: #111;
+    border-color: #111;
+}
+
+#banner .button:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* Navigation Styles */
+#header nav ul {
+    text-transform: uppercase;
+}
+
+#header nav a {
+    height: 71px;
+    line-height: 71px;
+    display: block;
+    padding: 0 10px;
+}
+
+#header nav a:hover {
+    opacity: 0.6;
+}
+
+h1 { padding: 22px 0; }
+h2 { padding: 15px 0; }
+h3 { padding: 12px 0; }
+h4, h5, h6 { padding: 8px 0; }
+
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+
+/* Section Titles */
+.section-title {
+    padding-bottom: 18px;
+}
+
+.subtitle {
+    font-size: 17px;
+    padding-top: 2px;
+}
+
+/* Banner Styling */
+#main-banner {
+    background-size: contain;
+}
+
+#main-banner-content.row {
+    padding-top: 165px;
+    padding-bottom: 105px;
+}
+
+#main-banner h1 { padding-top: 6%; }
+
+#main-banner .section-title:before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 6px;
+    margin-top: 28px;
+}
+
+/* Preloader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4b4b4b;
+    z-index: 99999;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#preloader div {
+    width: 50px;
+    height: 50px;
+    border: 4px solid #fff;
+    border-top: 4px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Scroll Effect */
+.scroll-effect {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    will-change: transform, opacity;
+}
+
+/* Gallery Section */
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+#gallery img {
+    height: 400px;
+}
+
+#gallery a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#gallery a:hover img {
+    opacity: 0.15;
+}
+
+/* Image Hover Effect */
+.gallery-img {
+    cursor: pointer;
+    transition: transform 0.25s ease;
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.modal-img {
+    width: 100%;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    color: white;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: opacity 0.35s ease;
+}
+
+.close-btn:hover {
+    opacity: 0.7;
+}
+
+/* Video Section */
+#video-box {
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Cars Section */
+#cars a {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#cars img {
+    padding: 15px 15px;
+    width: 800px;
+    height: 500px;
+}
+
+/* Image Section */
+.col-3img {
+    display: flex;
+    justify-content: center;
+}
+
+/* Clearfix */
+.clearfix:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+/*tech*/
+.garage {
+    padding: 15px;
+}
+
+.garage footer { padding-top: 12px; }
+
+.garage.classic q { display: block; }
+
+.garage.classic footer::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 10px auto 15px;
+}
+
+/*Nav trig*/
+#nav-trigger {
+    display: none;
+    text-align: right;
+}
+
+#nav-trigger span {
+    display: inline-block;
+    width: 40px;
+    height: 70px;
+    color: #121212;
+    cursor: pointer;
+    font: 21px;
+    text-align: center;
+    text-transform: capitalize;
+    border-radius: 6px 6px 0 0;
+    transition: .25s ease-in-out;
+}
+
+#nav-trigger span::after {
+    content: "\f0c9";
+    display: inline-block;
+    width: 38px;
+    height: 71px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+}
+
+/* Page Border Styles */
+.page-border {
+    position: fixed;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+.page-border > * {
+    position: fixed;
+    background: #cfafb9;
+    padding: 12px;
+}
+
+.page-border :is(.top-border, .bottom-border) {
+    width: 100%;
+    left: 0;
+}
+
+.page-border :is(.left-border, .right-border) {
+    height: 100%;
+    top: 0;
+}
+
+.top-border { top: 0; }
+.right-border { right: 0; }
+.bottom-border { bottom: 0; }
+.left-border { left: 0; }
+
+/* Wrapper Styles */
+#wrapper {
+    margin: 0 15px;
+    padding: 15px 0;
+    position: relative;
+}
+
+
+/* navcolor */
+#header nav a,
+#header i {
+    color: #111;
+}
+
+/* Banner */
+#banner {
+    background: url("../images/banner-images/bannerimage2.png") no-repeat center top;
+    background-size: cover;
+}
+
+#banner h1 {
+    font-size: 62px;
+    line-height: 60px;
+    font-weight: 800;
+    color: #111;
+}
+
+#banner h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+}
+
+
+/* Title/Subtitles */
+.section-title {
+    font-size: 34px;
+    font-weight: 700;
+    color: #ffc3c3;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: #dadada;
+}
+
+/*(h1-h6) */
+h1, h2, h3, h4, h5, h6 {
+    color: #919191;
+}
+
+h1 { font-size: 40px; font-weight: 300; }
+h2 { font-size: 34px; font-weight: 300; }
+h3 { font-size: 30px; font-weight: 700; }
+h4 { font-size: 18px; font-weight: 400; }
+h5 { font-size: 16px; font-weight: 400; }
+h6 { font-size: 14px; font-weight: 400; }
+
+/*Footer Styles*/
+#landing-footer,
+#landing-footer p,
+#landing-footer a {
+    font-size: 12px;
+    font-weight: normal;
+    color: #ffd4d4;
+}
