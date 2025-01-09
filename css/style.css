@@ -28,7 +28,6 @@ td {
 body {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
 }
 
 a {
@@ -83,16 +82,6 @@ form select {
 form input:focus,
 form textarea:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
-}
-
-*:focus {
-    outline: none;
-}
-
-/* Layout Elements */
-section {
-    clear: both;
-    overflow: hidden;
 }
 
 /* Rows and Columns */
@@ -186,10 +175,6 @@ section {
     padding: 0;
 }
 
-#navigation-logo {
-    display: none;
-}
-
 /* Button Styles */
 .button {
     border-style: solid;
@@ -204,10 +189,6 @@ section {
 /* Navigation Styles */
 #header {
     font-size: 13px;
-}
-
-#header aside {
-    float: right;
 }
 
 #header nav ul {
@@ -356,7 +337,6 @@ h6 {
     }
 }
 
-
 /* Scroll Effect */
 .scroll-effect {
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -364,10 +344,6 @@ h6 {
 }
 
 /* Header Elements */
-#header .row {
-    padding: 0 !important;
-}
-
 #header aside {
     display: inline-block;
     position: absolute;
@@ -391,19 +367,4 @@ h6 {
 #landing-footer #copyright {
     float: left;
     width: 50%;
-}
-
-/*Header Elements*/
-#header aside {
-    display: inline-block;
-    position: absolute;
-    top: 40px;
-    right: 60px;
-    padding-top: 3px;
-    padding-right: 5px;
-}
-
-#header aside ul {
-    margin-top: 0 !important;
-    padding-top: 6px;
 }

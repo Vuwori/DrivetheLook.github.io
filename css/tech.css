@@ -1,13 +1,8 @@
-
 /* Landing Page Sections */
 
-/* Tech Section */
+/* General Garage Styles */
 .garage {
     padding: 15px;
-}
-
-blockquote {
-    position: relative;
 }
 
 .garage img {
@@ -21,7 +16,7 @@ blockquote {
     padding-top: 12px;
 }
 
-/* Classic Style - Avatar Above Garage */
+/* Classic Style */
 .garage.classic img {
     display: inline-block;
     margin-bottom: 25px;
@@ -46,4 +41,9 @@ blockquote {
 
 .garage.bigtest q {
     font-size: 22px;
+}
+
+/* Blockquote Styles */
+blockquote {
+    position: relative;
 }
